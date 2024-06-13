@@ -10,7 +10,7 @@ load_dotenv('test.env')
 token = str(os.getenv('TOKEN'))
 
 intents = discord.Intents.default()
-intents.message = True
+intents.messages = True
 
 
 client = discord.Client(intents=intents)
